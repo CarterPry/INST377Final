@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - WeatherWise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="dashboard.html">Dashboard</a>
+    </nav>
+    
+    <h1>Weather Dashboard</h1>
+    <input id="cityInput" placeholder="Enter city">
+    <button id="getWeatherBtn">Get Weather</button>
+    <button id="getSavedCitiesBtn">Show Saved Cities</button>
+    <div id="result"></div>
+    <canvas id="forecastChart"></canvas>
+    <ul id="savedCities"></ul>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script>
+        const SUPABASE_URL = "https://bmkjnognzusdyghtkjzz.supabase.co";
+        const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJta2pub2duenVzZHlnaHRranp6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDc2MDI4MzIsImV4cCI6MjA2MzE3ODgzMn0.wM4aQZT2W73lflmOjlytYK4_ojfOS9i7PBYtLG4sl58";
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="fetchWeather.js"></script>
+    <script src="chart.js"></script>
+</body>
+</html>
