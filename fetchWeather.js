@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const API_KEY = '89c7025f289f86ad60f6a2e98ddb20f1';
 
     async function fetchWeather(city){
-        const response = await fetch(`http://api.weatherstack.com/current?access_key=${API_KEY}&query=${city}`);
+        const response = await fetch(`https://api.weatherstack.com/current?access_key=${API_KEY}&query=${city}`);
+
         const data = await response.json();
         return data;
     }
