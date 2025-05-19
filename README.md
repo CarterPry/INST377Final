@@ -1,6 +1,6 @@
-# WeatherWise 🌤️
+# INST377 Final
 
-WeatherWise is a a web app for my INST377 Final, that fetches real-time weather data with the Weatherstack API. My application stores cities to Supabase, and puts all of the data on a chart using Chart.js.
+This is a a web app for my INST377 Final, that fetches real-time weather data with the Weatherstack API. My application stores cities to Supabase, and puts all of the data on a chart using Chart.js.
 
 ## Pages
 - **Home**: Introduction
